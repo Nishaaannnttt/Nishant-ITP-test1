@@ -1,0 +1,23 @@
+#    TAKING THE INPUTS 
+month=int(input("enter the month in numeric form :"))
+day=int(input("enter the day in numeric form :"))
+year=int(input("enter the year as two numerical digits :"))
+
+if month in range(0,13):
+    print("Success: congratulations! you have entered the correct month ")
+else:
+    print("Error: Invalid month input")
+    
+if day in range(0,31):
+    print("Success: congratulations! you have entered the correct day ")
+else:
+    print("Error: Invalid day input")
+    
+if year in range(0,100):
+    print("Success: congratulations! you have entered the correct year ")
+else:
+    print("Error: Invalid year input")
+
+
+
+
