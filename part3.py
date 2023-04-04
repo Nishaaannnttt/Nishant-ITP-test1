@@ -6,7 +6,7 @@ cambodian_average=5649856
 
 #     TAKING INPUTS 
 salary=int(input("enter your salary in Germany : "))
-migrate=input("enter the country you want to migrate to :")
+migrate=input("enter the country you want to migrate to :").lower()
 
 def convertSalary():    
     
@@ -16,26 +16,26 @@ def convertSalary():
     cambodian=4847.38*salary
     # return cad,usd,pound,cambodian
     
-    if(migrate=="Canada"): 
+    if(migrate=="canada"): 
         # cad=cad
         if cad>canada_average:
             print("you will be rich in canada with salary of " +str(cad) +" CAD")
         else:
             print("you will be poor in canada with salary of "+str(cad)+" CAD")
             
-    elif(migrate=="USA"):
+    elif(migrate=="usa"):
         if usd>usa_average:
             print("you will be rich in usa with salary of " +str(usd) +" USD")
         else:
-            print("you will be poor in usa with salary of "+str(usd)+" CAD")
+            print("you will be poor in usa with salary of "+str(usd)+" USD")
             
-    elif(migrate=="UK"):
+    elif(migrate=="uk"):
         if pound>uk_average:
             print("you will be rich in uk with salary of " +str(pound) +" UK")
         else:
             print("you will be poor in uk with salary of "+str(pound)+" UK")
             
-    elif(migrate=="Cambodia"):
+    elif(migrate=="cambodia"):
         if cambodian>cambodian_average:
             print("you will be rich in cambodia with salary of " +str(cambodian) +" cambodian riel")
         else:
