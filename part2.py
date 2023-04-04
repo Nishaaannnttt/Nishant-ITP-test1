@@ -3,8 +3,8 @@ RED="red"
 BLUE="blue"
 YELLOW="yellow"
 
-color1=input("enter the  primary color in lowercase letter :")
-color2=input("enter the secondary color in lowercase letter :")
+color1=input("enter the  primary color in lowercase letter :").lower()
+color2=input("enter the secondary color in lowercase letter :").lower()
 
 #    CHECKING THE COLORS 
 if color1!=RED and color1!=BLUE and color1!=YELLOW :
